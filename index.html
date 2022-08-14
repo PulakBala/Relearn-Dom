@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h1>Welcome to my DOM</h1>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo vitae facere optio recusandae veniam.
+        Dignissimos perspiciatis id blanditiis totam deserunt, sapiente delectus officiis ipsa dolore tempora. Delectus,
+        consectetur voluptates quis molestias tempora alias voluptatem corrupti dignissimos doloremque suscipit
+        exercitationem placeat.</p>
+
+    <main id="main-container">
+        <section>
+            <h1>My Awesome DOM</h1>
+            <ul>
+                <li>getElementByID</li>
+                <li>querrySelector</li>
+                <li>.innerHTML</li>
+                <li>Dom document</li>
+            </ul>
+        </section>
+        <section class="fruits-attribute">
+            <h1 id="fruits-title" class="apple-class banna-class random class">Fruits I like</h1>
+            <ul id="fruits-list">
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section id="places-container">
+            <h1>Places I like to visit</h1>
+            <ul id="places-list">
+                <li class="important-place">Soondarban</li>
+                <li class="important-place">bandorban</li>
+                <li class="important-place">kataban</li>
+                <li>shalban</li>
+            </ul>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="js/append.js"></script>
+    <script src="js/style.js"></script>
+    <script>
+        const color = document.getElementsByTagName('li');
+        // console.log(color);
+        for(const li of color) {
+            // console.log(li.innerText);
+        }
+        const h1Collection = document.getElementsByTagName('h1');
+        for(const h1 of h1Collection) {
+            // console.log(h1.innerText);
+        }
+    </script>
+</body>
+
+</html>
